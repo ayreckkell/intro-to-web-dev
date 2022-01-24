@@ -9,6 +9,7 @@ h1{
   font-size: 90px;
   line-height: 10px;
   color: #4ea5d9;
+  letter-spacing: 1px;
 }
 
 h2{
@@ -17,6 +18,7 @@ h2{
   line-height: 10px;
   color: #f7b267;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 
