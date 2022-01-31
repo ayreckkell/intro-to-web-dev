@@ -1,20 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
+    <title>ARICK Studios</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
+      <div id="navbar">
+        <div id="logo">
+          <div class="mobile-btn" style="font-size:30px;cursor:pointer; color: #f0eded;font-weight:bold;" onclick="openNav()">&#9776;</div>
+          <div class="logo"><img src="images/logo.png" /></div>
+        </div>
+        <div id="links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Shop</a>
+        </div>
+      </div>
+
     </nav>
-    <div>
-      Replace the content in this file to create your business's homepage.
+
+    <!-- Mobile Menu -->
+    <div id="mySidenav" class="sidenav">
+      <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="">About</a>
+      <a href="">Shop</a>
     </div>
-    <footer>
-      Thanks for visiting my business!
-    </footer>
+
+    <!-- content -->
+    <div class="container">
+      <div class="header">
+
+      </div>
+
+      <div class="left">
+        <div class="imgbox"> <img src="images/vessel.jpg"/> </div>
+        <div class="textbox"><p> Illsutrations <p></div>
+
+      </div>
+
+      <div class="center">
+        <div class="imgbox"> <img src="images/vessel.jpg"/> </div>
+        <div class="textbox"><p> Charcter Design <p></div>
+      </div>
+
+      <div class="right">
+        <div class="imgbox"> <img src="images/vessel.jpg"/> </div>
+        <div class="textbox"><p> Animation <p></div>
+      </div>
+
+    </div>
+
+    <div class="flex">
+      <div class="middle">
+        <div class="left1">
+          <div class="imgbox1"> <img src="images/vessel.jpg"/> </div>
+
+        </div>
+
+      <div class="right1">
+        <div class="textbox1"></div>
+      </div>
+    </div>
+  </div>
+
+        <div class="footer">
+
+        </div>
+
+
+    <script>
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    </script>
+
   </body>
 </html>
