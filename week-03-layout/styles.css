@@ -13,6 +13,11 @@ img{
   width: 100%;
 }
 
+video {
+  width: 100%;
+  height: 100%;
+}
+
 /* Nav section*/
 
 #navbar {
@@ -32,7 +37,7 @@ img{
 }
 
 .logo img {
-  width: 25%;
+
   height: 100%;
 
 }
@@ -116,6 +121,7 @@ a {
     height: 100%;
 
   }
+
 }
 /* Tablet to Desktop */
 @media (min-width: 768px) {
@@ -125,10 +131,11 @@ a {
   }
 
   .logo img {
-    width: 25%;
+    width: 10%;
     height: 100%;
 
   }
+
 }
 
 /*Grid*/
@@ -137,19 +144,21 @@ a {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 1fr ;
 
 }
 /*header content*/
 .header {
   grid-column: 1 / 4;
-  background-color: #fca311;
+  background-color:  #222323;
   text-align: center;
   height: 768px;
 }
+
+
 /*left content*/
 .left{
-  background-color: #222323;
+  background-color: ##f0eded;;
 }
 .imgbox{
 height: 75%;
@@ -164,61 +173,163 @@ margin-top: 3%;
   /*background-color: #fff;*/
   margin-left: 11%;
   text-align: center;
-  color: #f0eded;
+  color: #222323;
 }
 /*center content*/
 .center{
-  background-color: #e63946;
+  background-color: #f0eded;
 }
 /*right content*/
 .right{
-  background-color: #1d3557;
+  background-color: #f0eded;
 }
 /*footer content*/
 .footer {
   grid-column: 1 / 4;
-  background-color: #a8dadc;
+  background-color: #f0eded;
   height: 100px;
+  text-align: center;
+  padding-top: 5%;
 }
 
-?
-/*flex*/
-.flex{
-  display: flex;
-
-  flex-direction: column;
-  gap: 10px;
+/*grid2*/
+.container1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
   }
-
-  .middle {
-  display: flex;
-  width: 100%;
-}
 .left1{
   background-color: #222323;
-  flex-basis:50%;
 
 }
 .right1{
-  background-color: #1d3557;
-  flex-basis:50%;
+  background-color: #222323;
 
 }
 
 .imgbox1{
-height: 75%;
-width: 50%;
+height: 100%;
+width: 40%;
 background-color: #222;
-margin-left: 11%;
-margin-top: 3%;
+margin-left: 13%;
+
 }
 
 .textbox1{
   height: 50%;
   width:75%;
-  background-color: #fff;
-
+  color: #f0eded;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 10%;
   text-align: center;
-  /*color: #f0eded;*/
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+  margin: 10px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+/* On mobile, the page layout is a single column. */
+@media (max-width: 600px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  background-color: #222323;
+  text-align: center;
+  height: 384px;
+}
+
+.container1 {
+display: flex;
+flex-direction: column;
+}
+.imgbox1{
+height: 100%;
+width: 40%;
+background-color: #222;
+margin-left: 25%;
+
+}
+
+.textbox1{
+  height: 200px;
+  width:75%;
+  margin-left: 10%;
+  text-align: center;
+  color: #f0eded;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.textbox{
+  height: 10%;
+  width:75%;
+  /*background-color: #fff;*/
+  margin-left: 11%;
+  text-align: center;
+  color: #222323;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  width: 100%;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+  margin: 5px;
+
+}
 }
