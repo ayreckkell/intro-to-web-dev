@@ -1,8 +1,26 @@
 #output {
   /* Output starts invisible */
   display: none;
+  width: 25%;
+  font-family: 'Poppins', sans-serif;
 }
 
-#adjective-one-output {
+#animal-output {
+  font-weight: bold;
+}
+
+#country-output {
+  font-weight: bold;
+}
+
+#pluralnoun-output {
+  font-weight: bold;
+}
+
+#food-output {
+  font-weight: bold;
+}
+
+#device-output {
   font-weight: bold;
 }

@@ -3,15 +3,39 @@
   <head>
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="inputs">
-      <div>Give me an adjective: <input id="adjective-one-input" /></div>
-      <button onclick="fillOutputs();">Done</button>
+    <div id="input1">
+      <div>Give me an animal: <input id="animal-input" /></div>
+      </div>
+<br>
+    <div id="input2">
+      <div>Give me an country: <input id="country-input" /></div>
     </div>
+<br>
+    <div id="input3">
+      <div>Give me an plural noun: <input id="pluralnoun-input" /></div>
+    </div>
+<br>
+    <div id="input4">
+      <div>Give me an food: <input id="food-input" /></div>
+    </div>
+<br>
+    <div id="input5">
+      <div>Give me an type of screen device: <input id="device-input" /></div>
+      <button onclick="fillOutputs();fillOutputs1();fillOutputs2();fillOutputs3();fillOutputs4();">Done</button>
+    </div>
+<br>
     <div id="output">
-      The <span id="adjective-one-output"></span> fox jumped over the lazy dog.
+      The Majestic <span id="animal-output"></span> has roamed the forests of
+        <span id="country-output"></span> for thousands of years. Today she wanders in search of
+        <span id="pluralnoun-output"></span>. She must find food to survive. While hunting for
+        <span id="food-output"></span>, she found a/an <span id="device-output"></span> hidden
+        behind a bush.
     </div>
   </body>
 </html>
