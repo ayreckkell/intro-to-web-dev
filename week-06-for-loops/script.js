@@ -65,7 +65,7 @@ function displayNameWords(){
   for(let i = 0; i < wordsArray.length; i++) {
       const word = wordsArray[i];
 
-      if(word[i].startsWith ('A')) {
+      if(wordsArray[i].startsWith ('a')) {
         const wordElement = document.createElement('li');
         wordElement.innerText = word;
         nameWordsElement.appendChild(wordElement);
@@ -73,6 +73,57 @@ function displayNameWords(){
   }
 }
 
+function displaySmallWords(){
+  const smallWordsElement = document.getElementById('small-words');
+
+  for(let i = 0; i < wordsArray.length; i++) {
+      const word = wordsArray[i];
+
+      if(word.length <= 2) {
+        const wordElement = document.createElement('li');
+        wordElement.innerText = word;
+        smallWordsElement.appendChild(wordElement);
+      }
+  }
+}
+
+function displayThirdWords(){
+  const thirdWordsElement = document.getElementById('third-words');
+
+  for(let i = 2; i <= 100; i += 3) {
+      const word = wordsArray[i];
+
+
+
+      if(word) {
+        const wordElement = document.createElement('li');
+        wordElement.innerText = word;
+        thirdWordsElement.appendChild(wordElement);
+      }
+
+
+
+  }
+}
+
+function displayUncommonWords() {
+
+  let commonWords = [ 'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'I']
+
+  const uncommonWordsElement = document.getElementById('uncommon-words');
+
+      for(let word of wordsArray) {
+        
+
+        if( !commonWords.includes(word)){
+          const wordElement = document.createElement('li');
+          wordElement.innerText = word;
+          uncommonWordsElement.appendChild(wordElement);
+        }
+      }
+
+
+}
 
 
 
@@ -87,6 +138,12 @@ function displaySpeechStats() {
   displayShortWords();
 
   displayNameWords();
+
+  displaySmallWords();
+
+  displayThirdWords();
+
+  displayUncommonWords();
 
   // TODO: Call your functions here!
 }
