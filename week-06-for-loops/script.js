@@ -113,7 +113,7 @@ function displayUncommonWords() {
   const uncommonWordsElement = document.getElementById('uncommon-words');
 
       for(let word of wordsArray) {
-        
+
 
         if( !commonWords.includes(word)){
           const wordElement = document.createElement('li');
@@ -121,8 +121,6 @@ function displayUncommonWords() {
           uncommonWordsElement.appendChild(wordElement);
         }
       }
-
-
 }
 
 
