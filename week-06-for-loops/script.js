@@ -59,7 +59,19 @@ function displayShortWords(){
   }
 }
 
+function displayNameWords(){
+  const nameWordsElement = document.getElementById('name-words');
 
+  for(let i = 0; i < wordsArray.length; i++) {
+      const word = wordsArray[i];
+
+      if(word[i].startsWith ('A')) {
+        const wordElement = document.createElement('li');
+        wordElement.innerText = word;
+        nameWordsElement.appendChild(wordElement);
+      }
+  }
+}
 
 
 
