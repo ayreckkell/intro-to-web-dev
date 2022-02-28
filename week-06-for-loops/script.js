@@ -1,7 +1,7 @@
 // Replace this speeh with your own.
 // Notice the `` backticks, which let you split your string into multiple lines.
-const speech = `
-  On to battle
+const speech =
+`On to battle
   Here we are the hunters
   Red as fire
   Crimson Bow and Arrow
