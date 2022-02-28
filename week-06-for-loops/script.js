@@ -142,6 +142,5 @@ function displaySpeechStats() {
   displayThirdWords();
 
   displayUncommonWords();
-
   // TODO: Call your functions here!
 }
