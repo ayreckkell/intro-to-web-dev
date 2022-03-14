@@ -7,6 +7,7 @@ function setup() {
     circleY[i] = random(height);
     ySpeed[i]= random(.5,2);
 
+
   }
 }
 
