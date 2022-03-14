@@ -7,7 +7,6 @@ function setup() {
     circleY[i] = random(height);
     ySpeed[i]= random(.5,2);
 
-
   }
 }
 
@@ -23,7 +22,6 @@ function draw() {
     if (circleY[i] > height){
       circleY[i] = 0;
     }
-
 
   }
 
