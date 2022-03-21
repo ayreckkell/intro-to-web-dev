@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Task List</title>
+    <title>Souls Bosses</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
   <body onload="loadContent();">
-    <h1>Task List</h1>
+    <h1>Souls Bosses</h1>
     <div id="table-container"></div>
     <hr>
-    <p>Shortest task: <span id="shortest-task"></span></p>
+    <p> Easiest Boss in Souls: <span id="shortest-task"></span></p>
+    <hr>
+    <p> Average Difficulty: <span id="average-task"></span></p>
     <hr>
     <div>
-      <h1>New Task</h1>
-      Label: <input type="text" id="label-input"/>
+      <h1>Boss</h1>
+      Boss Name: <input type="text" id="bossname-input"/>
       <br><br>
-      Time: <input type="number" id="time-input" />
+      Difficulty: <input type="number" id="Difficulty-input" />
+      <br><br>
+      Location: <input type="text" id="Location-input" />
       <br><br>
       <button onclick="addNewTask();">Add</button>
     </div>
