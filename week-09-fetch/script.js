@@ -23,7 +23,7 @@ async function loadContent() {
 
   loadImages(article.images);
   loadLanguages(article.langlinks)
-  loadExternal(article.externallink)
+  loadExternal(article.externallinks)
 }
 
 // Takes an array of image file names, uses the Wikipedia API to get the full
@@ -81,11 +81,23 @@ async function loadLanguages(langLinks){
 
 }
 
-async function loadExternal(externalLink){
+async function loadExternal(externallinks){
 
-  for (const link of externalLinks) {
+  const linksElement = document.getElementById('external');
 
-      console.log(externalLinks)
+  for (const links of externallinks) {
+
+     console.log(externallinks)
+
+      const linkElement = document.createElement('a');
+
+      linkElement.href = 'https://en.wikipedia.org/wiki/' + externallinks.source;
+      linkElement.innerText = externallinks.source;
+
+      const liElement = document.createElement('li');
+      liElement.appendChild(linkElement);
+
+      linksElement.appendChild(liElement);
 
     }
 
