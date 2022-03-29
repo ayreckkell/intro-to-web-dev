@@ -1,8 +1,32 @@
+Body{
+  background-color: black;
+}
 #images {
-  width: 500px;
-  border: thin solid black;
+  width: 750px;
 }
 
 #images img {
   width: 100px;
+}
+
+a{
+  color: #e63946;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Cormorant Garamond', serif;
+  color: #ffffff;
+
+}
+
+p{
+  font-family: 'Cormorant Garamond', serif;
+  color: #ffffff;
 }
