@@ -94,7 +94,7 @@ async function loadExternal(externallinks){
 
 
 
-      const linkElement = document.createElement('a');
+      const linkElement = document.createElement('p');
 
 
 
