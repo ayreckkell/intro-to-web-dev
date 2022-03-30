@@ -89,16 +89,23 @@ async function loadExternal(externallinks){
 
      console.log(externallinks)
 
+
+
+
+
+
       const linkElement = document.createElement('a');
 
-      linkElement.href = 'https://en.wikipedia.org/wiki/' + externallinks.source;
-      linkElement.innerText = externallinks.source;
+
+
+      linkElement.href = 'https://en.wikipedia.org/wiki/' + externallinks;
+      linkElement.innerText = externallinks;
 
       const liElement = document.createElement('li');
       liElement.appendChild(linkElement);
 
       linksElement.appendChild(liElement);
-
+      break;
     }
 
 
