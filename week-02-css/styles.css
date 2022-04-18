@@ -2,7 +2,7 @@
 p{
   font-family: 'Audiowide', cursive;
   font-size: 30px;
-  color: #4ea5d9;
+  color: ##3b7ba3;
 }
 h1{
   font-family: 'Bebas Neue', cursive;
@@ -16,7 +16,7 @@ h2{
   font-family: 'Bebas Neue', cursive;
   font-size: 40px;
   line-height: 10px;
-  color: #f7b267;
+  color: ##bc884f;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -78,5 +78,5 @@ hr.solid {
 
 #person{
   font-style: italic;
-  color: #f7b267;
+  color: #bc884f;
 }
