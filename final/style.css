@@ -1,0 +1,13 @@
+body {
+  background-color: #212529;
+}
+
+canvas {
+  border: 2px #343a40;
+  background-color: #457b9d;
+}
+
+h1{
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+}
