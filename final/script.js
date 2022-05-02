@@ -94,7 +94,7 @@ this.draw = function(){
   this.jump = function () {
     if (isJumping) {
       this.y -= jumpSpeed;
-      jumpSpeed += 0.3;
+      jumpSpeed += 0.25;
     }
   }
 }
